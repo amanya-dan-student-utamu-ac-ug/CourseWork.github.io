@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+    
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #242222;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 25px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+body{
+    width: 100%;
+}
+/*------------Header Start------------*/
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e3e3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: orangered;
+
+}
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: orangered;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+/*------------Home------------*/
+.hero{
+    background-image: url("Jelwery/jp22p30tbll31.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hero h1{
+    font-size: 100px;
+    color: rgb(255, 103, 1);
+
+}
+.hero p{
+    font-size: 50px;
+}
+
+/*------------Collection------------*/
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #9e9595;
+    border-radius: 25px;
+    margin: 15px 0;
+
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .description{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .description span{
+    color: #1a1a1a;
+    font-size: 20px;
+}
+#product1 .pro .description h5{
+    color: #9e9595;
+    font-size: 15px;
+}
+#product1 .pro .description i{
+    color: orangered;
+}
+/*------------WhyUs------------*/
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("Jelwery/5866a921e192d6ed0eaf6dfe321f682a.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: orangered;
+    font-size: 30px;
+}
+#banner h2{
+    color: #ffffff;
+    font-size: 45px;
+    padding: 10px 0;
+}
+#banner button:hover{
+    background-color: orangered;
+    color: #ffffff;
+}
+/*------------Gallery------------*/
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("Jelwery/1ad9b3df50f67037483225047de5c048.jpg");
+    min-width: 580px;
+    height: 50vh;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+}
+#sm-banner h4{
+    color: orangered;
+    font-size: 40px;
+}
+#sm-banner button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+#sm-banner button:hover{
+    background-color: orangered;
+    color: #ffffff;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("Jelwery/729bca21bc455703a20a20f1befac785.jpg");
+    min-width: 580px;
+    height: 50vh;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+}
+/*------------Gallery------------*/
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background:#1a1a1a;
+    
+}
+#newsletter h4{
+    color: orangered;
+    font-size: 40px;
+}
+#newsletter p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#newsletter input{
+    font-size: 15px;
+    border-radius: none;
+    outline: none;
+    padding: 10px;
+}
+#newsletter button{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px;
+    color: black;
+    background-color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+#newsletter button:hover{
+    color: orangered;
+    color: #ffffff;
+}
+/*------------Footer------------*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+}
+footer .col{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer img{
+    max-width: 150px;
+}
+footer h4{
+    color: orangered;
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+footer p{
+    color: #ffffff;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+footer .copyright{
+    color: #ffffff;
+    text-align: center;
+}
+footer .follow i{
+    color: #ffffff;
+    cursor: pointer;
+}
+footer a:hover{
+    color: orangered;
+}
+footer .follow i:hover{
+    color: orangered;
+}
+footer .copyright{
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+}
+.context{
+    text-align: center;
+  
+}
+.context p{
+    font-size: 20px;
+    color: #222;
+    
+}
+#form-detail form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-detail form span{
+    font-size: 12px;
+}
+#form-detail form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#form-detail form input,
+#form-detail form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid;
+    color: orangered;
+}
+#form-detail form button{
+    background-color: orangered;
+    color: #ffffff ;
+}
+/*---------Media Queries------------------*/
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #9e9595;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+
+    }
+    #navbar.active{
+        right: 0px; 
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: orangered;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    #close{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: orangered;
+        font-size: 25px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    .hero {
+        
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+        
+    }
+}
